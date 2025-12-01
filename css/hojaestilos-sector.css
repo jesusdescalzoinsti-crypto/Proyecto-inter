@@ -1,0 +1,54 @@
+.dark-theme-container {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme-container h2 {
+    color: #569cd6;
+    border-bottom: 2px solid #569cd6;
+    padding-bottom: 10px;
+}
+
+.dark-theme-container h3 {
+    color: #4ec9b0;
+    margin-top: 25px;
+    padding: 5px 0;
+}
+
+.dark-theme-container ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.dark-theme-container ul li {
+    padding: 8px 15px;
+    margin-bottom: 4px;
+    border-left: 3px solid transparent;
+    transition: background-color 0.3s;
+}
+
+.dark-theme-container ul ul {
+    margin-top: 5px;
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+    padding: 10px 15px;
+    background-color: #252526;
+}
+
+.dark-theme-container ul ul li:hover {
+    background-color: #2d2d2d;
+    border-left-color: #569cd6;
+    cursor: default;
+}
+
+.dark-theme-container hr {
+    border: 0;
+    height: 1px;
+    background-color: #3c3c3c;
+    margin: 20px 0;
+}

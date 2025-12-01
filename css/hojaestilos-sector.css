@@ -39,7 +39,7 @@ h2 {
 p {
     font-size: 18px;
     line-height: 1.6;
-    color: #333;
+    color: #000000;
 }
 
 .img-box {
@@ -126,7 +126,7 @@ p {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
     font-family: Arial, sans-serif;
-    color: #343a40;
+    color: #000000;
 }
 
 .info-acordeon h2 {
@@ -152,7 +152,7 @@ p {
 
 .info-acordeon h3 {
     background-color: #e9ecef;
-    color: #495057;
+    color: #000000;
     padding: 15px 20px;
     border-radius: 8px 8px 0 0;
     margin-top: 0;

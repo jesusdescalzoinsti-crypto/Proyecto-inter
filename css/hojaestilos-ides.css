@@ -121,3 +121,26 @@ p {
     transform: skew(-20deg) scale(1.1);
     box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
 }
+
+ol.galeria {
+    display: flex;
+    flex-wrap: wrap;       /* 🔥 Evita que las imágenes se salgan */
+    gap: 30px;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+ol.galeria li {
+    width: 300px;          /* 🔥 Tamaño máximo para cada imagen + número */
+    list-style: decimal;   /* Asegura numeración */
+    text-align: center;
+}
+
+ol.galeria li img {
+    width: 100%;           /* 🔥 Se adapta al espacio del li */
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}

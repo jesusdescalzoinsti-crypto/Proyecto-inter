@@ -1,6 +1,6 @@
 body {
       font-family: Arial, sans-serif;
-      background: #7088b1;
+      background: #000000;
       margin: 0;
       padding: 40px;
       display: flex;
@@ -18,7 +18,7 @@ body {
       font-size: 36px;
       font-weight: 800;
       letter-spacing: 1px;
-      color: #0b3fa8;
+      color: #b90d0d;
       font-family: 'Poppins', sans-serif;
     }
 
@@ -45,7 +45,7 @@ body {
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover; /* 🔥 Hace que la imagen ocupe todo el botón */
+      object-fit: cover; /*Hace que la imagen ocupe todo el botón */
       z-index: -1; /* Imagen detrás del texto */
       filter: brightness(0.6); /* oscurece para que el texto se lea */
     }

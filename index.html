@@ -1,115 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-<h1>IDEs y herramientas</h1>
-<p>Listado de entornos y utilidades útiles para DAM:</p>
-<ul>
-    <li>IntelliJ IDEA / Android Studio (Java/Kotlin)</li>
-    <li>Visual Studio Code (web, Flutter, Ionic)</li>
-    <li>Xcode (iOS nativo)</li>
-    <li>Emuladores y dispositivos reales para pruebas</li>
-    <li>Postman / Insomnia para probar APIs</li>
-</ul>
-</div>
-</body>
-
-</html>
-
-
-
-
-<!-- ====================== cuestionario.html ======================= -->
-<!-- Guardar como: cuestionario.html -->
-<!doctype html>
-<html lang="es">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Cuestionario - DAM</title>
-    <style>
-        body {
-            font-family: Inter, Arial, sans-serif;
-            margin: 0;
-            padding: 2rem;
-            background: #f3f6f9
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index con Botones</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
 
-        .card {
-            max-width: 680px;
-            margin: 0 auto;
-            background: white;
-            padding: 1.25rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 26px rgba(2, 6, 23, .06)
-        }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 320px;
+    }
 
-        .question {
-            margin-bottom: 1rem
-        }
+    h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
 
-        button {
-            padding: .5rem .85rem;
-            border-radius: 8px;
-            border: 0;
-            background: #0b76ef;
-            color: white;
-            cursor: pointer
-        }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #0b58d1;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+    }
 
-        .result {
-            margin-top: 1rem;
-            color: #0b76ef;
-            font-weight: 700
-        }
-
-        a.back {
-            display: inline-block;
-            margin-bottom: 1rem;
-            text-decoration: none;
-            color: #0b76ef
-        }
-    </style>
+    button:hover {
+      background: #093fa1;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="card">
-        <a class="back" href="index.html">← Volver al índice</a>
-        <h1>Cuestionario rápido</h1>
-        <form id="quiz">
-            <div class="question">
-                <label>1) ¿Qué sirve para controlar versiones de código?</label><br>
-                <label><input type="radio" name="q1" value="git"> Git</label><br>
-                <label><input type="radio" name="q1" value="svn"> SVN</label><br>
-                <label><input type="radio" name="q1" value="none"> Ninguno</label>
-            </div>
+  <div class="container">
+    <h1>Menú Principal</h1>
 
-
-            <div class="question">
-                <label>2) ¿Qué significa API?</label><br>
-                <label><input type="radio" name="q2" value="app"> Application Programming Interface</label><br>
-                <label><input type="radio" name="q2" value="auto"> Automatic Program Interface</label><br>
-                <label><input type="radio" name="q2" value="none"> Ninguno</label>
-            </div>
-
-
-            <button type="submit">Enviar</button>
-        </form>
-        <div id="result" class="result" aria-live="polite"></div>
-    </div>
-
-
-    <script>
-        document.getElementById('quiz').addEventListener('submit', function (e) {
-            e.preventDefault();
-            let score = 0;
-            const a1 = document.querySelector('input[name="q1"]:checked');
-            const a2 = document.querySelector('input[name="q2"]:checked');
-            if (a1 && a1.value === 'git') score++;
-            if (a2 && a2.value === 'app') score++;
-            const text = `Has respondido ${score} de 2 respuestas correctamente.`;
-            document.getElementById('result').innerText = text;
-        });
-    </script>
+    <button onclick="location.href='sector.html'">Sector productivo asociado al DAM</button>
+    <button onclick="location.href='desarrollo.html'">Desarrollo Software</button>
+    <button onclick="location.href='ides.html'">IDES</button>
+    <button onclick="location.href='cuestionario.html'">Cuestionario</button>
+  </div>
 </body>
-
 </html>

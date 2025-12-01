@@ -1,88 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index con Botones Estéticos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #7088b1;
-      margin: 0;
-      padding: 40px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 1000px;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 45px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      color: #e2ec50;
-      font-family: 'Poppins', bauhaus-93;
-    }
-
-    .card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background-size: cover;
-      background-position: center;
-      border-radius: 16px;
-      padding: 25px;
-      color: white;
-      font-size: 26px;
-      font-weight: 700;
-      font-family: 'Poppins', sans-serif;
-      margin-bottom: 22px;
-      height: 150px;
-      cursor: pointer;
-      backdrop-filter: brightness(0.7);
-      transition: transform 0.25s, box-shadow 0.25s;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    }
-
-    /* Imagen de fondo de cada botón */
-    .sector { background-image: url('IMG/pexels-tima-miroshnichenko-6755074.jpg'); }
-    .desarrollo {  background-image: url('IMG/pexels-markusspiske-2004161.jpg'); }
-    .ides {  background-image: url('IMG/pexels-olia-danilevich-4974922.jpg'); }
-    .cuestionario {  background-image: url('IMG/pexels-diva-plavalaguna-6937871.jpg'); }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index con Botones Estéticos</title>
+    <link rel="stylesheet" href="css/hojadeestilos.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Menú Principal</h1>
+    <div class="container">
+        <h1>Menú Principal</h1>
 
-    <div class="card sector" onclick="location.href='sector.html'">
+        <div class="card sector" onclick=" location.href='sector.html' ">
 
-      Sector productivo asociado al DAM
+            Sector productivo asociado al DAM
+        </div>
+
+        <div class="card desarrollo" onclick=" location.href='desarrollo.html' ">
+            Desarrollo Software
+        </div>
+
+        <div class="card ides" onclick="location.href='ides.html'">
+            IDES
+        </div>
+
+        <div class="card cuestionario" onclick="location.href='cuestionario.html'">
+            Cuestionario
+        </div>
+
     </div>
-
-    <div class="card desarrollo" onclick="location.href='desarrollo.html'">
-      Desarrollo Software
-    </div>
-
-    <div class="card ides" onclick="location.href='ides.html'">
-      IDES
-    </div>
-
-    <div class="card cuestionario" onclick="location.href='cuestionario.html'">
-      Cuestionario
-    </div>
-
-  </div>
 </body>
 </html>

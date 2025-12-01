@@ -77,6 +77,7 @@ p {
     transform: scale(1.05);
     background: #09317e;
 }
+
 .botonera-romboide {
     display: flex;
     justify-content: center;
@@ -98,6 +99,7 @@ p {
     box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
 }
 
+
 .romboide span, 
 .romboide {
     transform-origin: center;
@@ -114,57 +116,80 @@ p {
     box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
 }
 
-.dark-theme-container {
-    background-color: #1e1e1e;
-    color: #d4d4d4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+
+
+.info-acordeon {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif;
+    color: #343a40;
 }
 
-.dark-theme-container h2 {
-    color: #569cd6;
-    border-bottom: 2px solid #569cd6;
+.info-acordeon h2 {
+    color: #007bff; 
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
 }
 
-.dark-theme-container h3 {
-    color: #4ec9b0;
-    margin-top: 25px;
-    padding: 5px 0;
+.info-acordeon p {
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
-.dark-theme-container ul {
+.info-acordeon hr {
+    border: none;
+    height: 1px;
+    background-color: #ced4da;
+    margin: 30px 0;
+}
+
+
+.info-acordeon h3 {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 15px 20px;
+    border-radius: 8px 8px 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.4em;
+    border-left: 5px solid #28a745;
+}
+
+.info-acordeon ul {
     list-style: none;
-    padding-left: 0;
-    margin-bottom: 20px;
+    padding: 0;
+    margin-top: 0;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.dark-theme-container ul li {
-    padding: 8px 15px;
-    margin-bottom: 4px;
-    border-left: 3px solid transparent;
+.info-acordeon ul li {
+    padding: 15px 25px;
+    border-bottom: 1px solid #e9ecef;
+    line-height: 1.5;
     transition: background-color 0.3s;
 }
 
-.dark-theme-container ul ul {
-    margin-top: 5px;
-    border: 1px solid #3c3c3c;
-    border-radius: 4px;
-    padding: 10px 15px;
-    background-color: #252526;
+.info-acordeon ul li:hover {
+    background-color: #f1f3f5; 
 }
 
-.dark-theme-container ul ul li:hover {
-    background-color: #2d2d2d;
-    border-left-color: #569cd6;
-    cursor: default;
+.info-acordeon ul li:last-child {
+    border-bottom: none;
 }
 
-.dark-theme-container hr {
-    border: 0;
-    height: 1px;
-    background-color: #3c3c3c;
-    margin: 20px 0;
+.info-acordeon ul li strong {
+    color: #dc3545;
+    font-weight: 700;
+    display: inline-block;
+    min-width: 90px;
 }

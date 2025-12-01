@@ -3,58 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index con Botones</title>
+  <title>Index con Botones Estéticos</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f2f4f8;
+      background: #eef1f6;
+      margin: 0;
+      padding: 40px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
     }
 
     .container {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-      text-align: center;
-      width: 320px;
+      width: 100%;
+      max-width: 1000px;
     }
 
     h1 {
-      font-size: 22px;
-      margin-bottom: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
     }
 
-    button {
-      width: 100%;
-      padding: 12px;
-      margin: 8px 0;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      background: #0b58d1;
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-size: cover;
+      background-position: center;
+      border-radius: 14px;
+      padding: 25px;
       color: white;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      height: 140px;
       cursor: pointer;
-      transition: 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    button:hover {
-      background: #093fa1;
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
+
+    /* Imagen de fondo de cada botón */
+    .sector { background-image: url('https://images.unsplash.com/photo-1581092335499-8726d5b0c327'); }
+    .desarrollo { background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475'); }
+    .ides { background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c'); }
+    .cuestionario { background-image: url('https://images.unsplash.com/photo-1553531384-cc64ac80f931'); }
+
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Menú Principal</h1>
 
-    <button onclick="location.href='sector.html'">Sector productivo asociado al DAM</button>
-    <button onclick="location.href='desarrollo.html'">Desarrollo Software</button>
-    <button onclick="location.href='ides.html'">IDES</button>
-    <button onclick="location.href='cuestionario.html'">Cuestionario</button>
+    <div class="card sector" onclick="location.href='sector.html'">
+      Sector productivo asociado al DAM
+    </div>
+
+    <div class="card desarrollo" onclick="location.href='desarrollo.html'">
+      Desarrollo Software
+    </div>
+
+    <div class="card ides" onclick="location.href='ides.html'">
+      IDES
+    </div>
+
+    <div class="card cuestionario" onclick="location.href='cuestionario.html'">
+      Cuestionario
+    </div>
+
   </div>
 </body>
 </html>

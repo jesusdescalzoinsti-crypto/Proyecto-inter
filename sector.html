@@ -20,77 +20,140 @@
             </div>
 
             <div class="info-acordeon">
-                <h2>CLASIFICACIÓN DE EMPRESAS DE DAM</h2>
 
-                <p>El texto clasifica las entidades que ofrecen soluciones de desarrollo multiplataforma en cuatro
-                    categorías principales, destacando sus características organizativas, fortalezas clave y el
-                    tipo de producto o servicio que ofrecen.</p>
+                <div class="acordeon-encabezado" onclick="toggleAcordeon()">
+                    <h2>EMPRESAS DE DESARROLLO DE APLICACIONES MULTIPLATAFORMA</h2>
 
-                <hr>
+                    <button id="toggle-btn" class="toggle-button">
+                        &#9660;
+                    </button>
+                </div>
 
-                <h3>1. Grandes Consultoras y Empresas de Servicios</h3>
-                <ul>
-                    <li><strong>Perfil:</strong> Organizaciones muy grandes con miles de empleados y equipos
-                        especializados en diversos frameworks (React Native, Flutter).</li>
-                    <li><strong>Fortaleza:</strong> Escalabilidad y capacidad para gestionar proyectos
-                        complejos con procesos de calidad rigurosos.</li>
-                    <li><strong>Servicio:</strong> Soluciones de transformación digital a gran escala y
-                        aplicaciones empresariales (ERP, CRM) para industrias reguladas (finanzas, sanidad).
-                    </li>
-                </ul>
+                <div id="contenido-desplegable" class="acordeon-contenido">
 
-                <hr>
+                    <p>El texto clasifica las entidades que ofrecen soluciones de desarrollo multiplataforma en cuatro
+                        categorías principales, destacando sus características organizativas, fortalezas clave y el
+                        tipo de producto o servicio que ofrecen.</p>
 
-                <h3>2. Agencias de Desarrollo Especializadas</h3>
-                <ul>
-                    <li><strong>Perfil:</strong> Empresas medianas a grandes con alto dominio en **una o dos
-                        tecnologías específicas y un fuerte equipo de diseño.</li>
-                    <li><strong>Fortaleza:</strong> Rapidez de entrega, expertise técnico enfocado y gran
-                        énfasis en la Experiencia del Usuario (UX/UI).</li>
-                    <li><strong>Servicio:</strong> Desarrollo de MVP (Productos Mínimos Viables), aplicaciones
-                        para startups de alto crecimiento y soluciones de consumo directo (e-commerce,
-                        streaming).</li>
-                </ul>
+                    <hr>
 
-                <hr>
+                    <h3>1. Grandes Consultoras y Empresas de Servicios</h3>
+                    <ul>
+                        <li><strong>Perfil:</strong> Organizaciones muy grandes con miles de empleados y equipos
+                            especializados en diversos frameworks (React Native, Flutter).</li>
+                        <li><strong>Fortaleza:</strong> Escalabilidad y capacidad para gestionar proyectos
+                            complejos con procesos de calidad rigurosos.</li>
+                        <li><strong>Servicio:</strong> Soluciones de transformación digital a gran escala y
+                            aplicaciones empresariales (ERP, CRM) para industrias reguladas (finanzas, sanidad).
+                        </li>
+                    </ul>
 
-                <h3>3. Empresas de Producto</h3>
-                <ul>
-                    <li><strong>Perfil:</strong> Tamaño muy variado (desde startups a gigantes). Los equipos
-                        trabajan para mejorar un único producto central.</li>
-                    <li><strong>Fortaleza:</strong> Conocimiento profundo de nicho y desarrollo iterativo
-                        impulsado por datos.</li>
-                    <li><strong>Servicio:</strong> Software como Servicio (SaaS) o aplicaciones de consumo
-                        (productividad, juegos) que requieren disponibilidad en todas las plataformas (Web, iOS,
-                        Android).</li>
-                </ul>
+                    <hr>
 
-                <hr>
+                    <h3>2. Agencias de Desarrollo Especializadas</h3>
+                    <ul>
+                        <li><strong>Perfil:</strong> Empresas medianas a grandes con alto dominio en **una o dos
+                            tecnologías específicas y un fuerte equipo de diseño.</li>
+                        <li><strong>Fortaleza:</strong> Rapidez de entrega, expertise técnico enfocado y gran
+                            énfasis en la Experiencia del Usuario (UX/UI).</li>
+                        <li><strong>Servicio:</strong> Desarrollo de MVP (Productos Mínimos Viables), aplicaciones
+                            para startups de alto crecimiento y soluciones de consumo directo (e-commerce,
+                            streaming).</li>
+                    </ul>
 
-                <h3>4. Freelancers y Equipos Pequeños</h3>
-                <ul>
-                    <li><strong>Perfil:</strong> Individuales o muy pequeños (2-10 personas), operan de forma
-                        remota y con alta flexibilidad.</li>
-                    <li><strong>Fortaleza:</strong> Costos más bajos, comunicación directa y alta
-                        personalización.</li>
-                    <li><strong>Servicio:</strong> Proyectos pequeños, trabajos puntuales (mantenimiento,
-                        prototipos) dirigidos a PyMEs o startups con presupuestos limitados.</li>
-                </ul>
+                    <hr>
+
+                    <h3>3. Empresas de Producto</h3>
+                    <ul>
+                        <li><strong>Perfil:</strong> Tamaño muy variado (desde startups a gigantes). Los equipos
+                            trabajan para mejorar un único producto central.</li>
+                        <li><strong>Fortaleza:</strong> Conocimiento profundo de nicho y desarrollo iterativo
+                            impulsado por datos.</li>
+                        <li><strong>Servicio:</strong> Software como Servicio (SaaS) o aplicaciones de consumo
+                            (productividad, juegos) que requieren disponibilidad en todas las plataformas (Web, iOS,
+                            Android).</li>
+                    </ul>
+
+                    <hr>
+
+                    <h3>4. Freelancers y Equipos Pequeños</h3>
+                    <ul>
+                        <li><strong>Perfil:</strong> Individuales o muy pequeños (2-10 personas), operan de forma
+                            remota y con alta flexibilidad.</li>
+                        <li><strong>Fortaleza:</strong> Costos más bajos, comunicación directa y alta
+                            personalización.</li>
+                        <li><strong>Servicio:</strong> Proyectos pequeños, trabajos puntuales (mantenimiento,
+                            prototipos) dirigidos a PyMEs o startups con presupuestos limitados.</li>
+                    </ul>
+                </div>
             </div>
         </div>
+
         <div class="section">
             <div class="img-box">
                 <img src="IMG/pexels-diva-plavalaguna-6937871.jpg" alt="Desarrollo software">
             </div>
-            <h2>APACHE NETBEANS</h2>
-            <p>
-                El desarrollo de software es el proceso de crear aplicaciones, programas y sistemas que permiten
-                automatizar tareas, resolver problemas y mejorar la experiencia de los usuarios. Incluye desde
-                la
-                planificación, diseño y programación, hasta las pruebas, mantenimiento y actualización del
-                software.
-            </p>
+            <div class="info-acordeon">
+
+                <div class="tabla-acordeon-encabezado" onclick="toggleTabla()">
+                    <h2>ESTRUCTURA ORGANIZATIVA EN EMPRESAS DAM</h2>
+
+                    <button id="toggle-tabla-btn" class="toggle-button">
+                        &#9660;
+                    </button>
+                </div>
+
+                <div id="contenido-tabla-desplegable" class="tabla-acordeon-contenido">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Modelo de Empresa</th>
+                                <th>Analogía Simple</th>
+                                <th>¿Qué Hacen Realmente?</th>
+                                <th>¿Quién Manda (El Rol Clave)?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1. Grandes Consultoras Globales</strong></td>
+                                <td>El Ejército de Ingeniería Civil</td>
+                                <td>Construyen "autopistas digitales" (grandes sistemas como ERPs o Core Banking).
+                                    Se enfocan en la seguridad, las reglas y la gestión de proyectos gigantescos.
+                                </td>
+                                <td>El **Socio/director de Cuenta** (El que trae el negocio) y el **Arquitecto** (El
+                                    que diseña el plano de la ciudad).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2. Agencias Especializadas</strong></td>
+                                <td>El Estudio de Diseño de Interiores</td>
+                                <td>Hacen apps nuevas, rápidas y muy atractivas (MVPs, e-commerce, streaming). Se
+                                    preocupan mucho por el "look and feel" (la Experiencia del Usuario).</td>
+                                <td>El **Diseñador UX/UI** (El que dice dónde va cada cosa) y el **Project Manager**
+                                    (El capataz que habla con el cliente).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3. Empresas de Producto</strong></td>
+                                <td>El Chef con un Solo Restaurante</td>
+                                <td>Tienen un solo producto (ej. Netflix, Spotify, Trello) y se dedican a mejorarlo cada
+                                    día
+                                    basándose en lo que pides. Su meta es que vuelvas siempre.</td>
+                                <td>El **Product Manager** (El dueño del menú y la visión) y el **Líder Técnico**
+                                    (El chef principal).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4. Freelancers y Equipos Pequeños</strong></td>
+                                <td>El Artesano Local o Manitas</td>
+                                <td>Hacen trabajos pequeños, urgentes o muy personalizados (prototipos, webs para
+                                    PyMEs). Son
+                                    baratos y flexibles, pero tienen un límite de cuánto pueden construir.</td>
+                                <td>El **Desarrollador-Consultor** (Hace de cocinero, camarero y cajero a la vez).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+
         <div class="section">
             <div class="img-box">
                 <img src="IMG/pexels-field-engineer-147254-442150.jpg" alt="Desarrollo software">
@@ -104,19 +167,27 @@
                 software.
             </p>
         </div>
-        <div class="section">
-            <div class="img-box">
-                <img src="IMG/pexels-markusspiske-2004161.jpg" alt="Desarrollo software">
-            </div>
-            <h2>INTELLIJ</h2>
-            <p>
-                El desarrollo de software es el proceso de crear aplicaciones, programas y sistemas que permiten
-                automatizar tareas, resolver problemas y mejorar la experiencia de los usuarios. Incluye desde
-                la
-                planificación, diseño y programación, hasta las pruebas, mantenimiento y actualización del
-                software.
-            </p>
-        </div>
-        </div> 
-    </body>
+    </div>
+
+
+    <script>
+        function toggleAcordeon() {
+            const contenido = document.getElementById('contenido-desplegable');
+            const boton = document.getElementById('toggle-btn');
+
+            contenido.classList.toggle('desplegado');
+            boton.classList.toggle('active');
+        }
+
+        function toggleTabla() {
+            const contenidoTabla = document.getElementById('contenido-tabla-desplegable');
+            const botonTabla = document.getElementById('toggle-tabla-btn');
+
+            contenidoTabla.classList.toggle('desplegado');
+            botonTabla.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
 </html>

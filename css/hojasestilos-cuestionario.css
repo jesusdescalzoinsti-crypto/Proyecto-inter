@@ -1,16 +1,15 @@
-/* Archivo: hojasestilos-cuestionario.css - Versión Colorida */
+/* Archivo: hojasestilos-cuestionario.css - Versión Súper Simple */
 
 /* ----------------------------------
  * 1. Estilos Globales y Contenedor
  * ---------------------------------- */
 body {
-    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5; /* Fondo más moderno y ligero */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f2f5; /* Fondo muy claro */
     margin: 0;
-    padding: 40px 20px;
+    padding: 30px 10px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     min-height: 100vh;
 }
 
@@ -18,18 +17,17 @@ body {
     width: 100%;
     max-width: 100%;
     background-color: #fff;
-    border-radius: 18px; /* Bordes más suaves */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
-    padding: 35px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
     overflow-x: hidden;
 }
 
 h1 {
-    color: #4b0082;
-    font-size: 40px; /* Titular más grande */
-    font-weight: 800; /* Más peso */
-    margin-bottom: 5px;
-    padding: 0 45px;
+    color: #4b0082; /* Morado Oscuro */
+    font-size: 32px;
+    padding: 0 30px; /* Padding más simple */
+    margin-bottom: 20px;
 }
 
 /* ----------------------------------
@@ -37,126 +35,83 @@ h1 {
  * ---------------------------------- */
 .email-info {
     color: #6c757d;
-    font-size: 15px;
-    border-bottom: 3px solid #e0ceff; /* Línea separadora colorida */
-    padding: 0 45px 15px;
-    margin-bottom: 25px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 30px 10px;
+    margin-bottom: 20px;
 }
 
 .email-info a {
     color: #8a2be2;
     text-decoration: none;
     margin-left: 10px;
-    font-weight: 600;
 }
 
 .required-note {
     color: #dc3545;
-    font-size: 14px;
-    margin-bottom: 35px;
-    font-style: italic;
-    padding: 0 45px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    padding: 0 30px;
 }
 
 /* ----------------------------------
- * 3. Contenedor de Cuestionarios y Layout Horizontal
+ * 3. Contenedor Horizontal de Tarjetas
  * ---------------------------------- */
 .quizzes-wrapper {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    padding: 0 45px 30px 45px; /* Más padding inferior para el scroll */
-    /* Opcional: Estilo de scrollbar para Webkit */
-    &::-webkit-scrollbar {
-        height: 8px;
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: #8a2be2;
-        border-radius: 4px;
-    }
-    &::-webkit-scrollbar-track {
-        background: #e0ceff;
-    }
+    padding: 0 30px 20px 30px;
 }
 
 .quiz-section {
     flex-shrink: 0;
-    width: 650px;
-    margin-right: 30px;
-    padding: 40px; /* Más padding interno */
+    width: 500px; /* Tamaño de tarjeta fijo y más manejable */
+    margin-right: 20px; /* Espacio entre tarjetas */
+    padding: 25px; 
     
-    border: none; /* Quitamos el borde, la sombra lo define */
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #ffffff;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.quiz-section:hover {
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px); /* Pequeño levantamiento al pasar el ratón */
-}
-
-.quiz-section:last-child {
-    margin-right: 0;
-}
-
-hr {
-    display: none;
+    box-shadow: 0 5px 10px rgba(138, 43, 226, 0.1);
 }
 
 .quiz-section h2 {
     color: #4b0082;
-    border-bottom: 4px solid #8a2be2; /* Línea más marcada */
-    padding-bottom: 12px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: 700;
+    border-bottom: 2px solid #8a2be2;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-size: 20px;
     text-align: center;
 }
 
 /* ----------------------------------
- * 4. Bloques de Preguntas (Tarjetas)
+ * 4. Bloques de Preguntas
  * ---------------------------------- */
 .question-block {
-    border: none;
     background-color: #f7f7ff;
-    border-radius: 12px; /* Más redondeado */
-    padding: 25px;
-    margin-bottom: 25px;
-    box-shadow: 0 2px 8px rgba(138, 43, 226, 0.1); /* Sombra con color primario */
-    transition: background-color 0.2s;
-}
-
-.question-block:hover {
-    background-color: #f2f2ff; /* Resalta más al pasar el ratón */
-    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .question-title {
-    font-size: 19px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: bold;
     color: #343a40;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.required-star {
-    color: #dc3545;
-    margin-left: 5px;
-    font-size: 20px;
-}
-
 .points-badge {
-    background-color: #8a2be2; /* Fondo de puntuación más oscuro */
-    color: white;
-    padding: 5px 12px;
-    border-radius: 25px;
-    font-size: 13px;
-    font-weight: 700;
+    background-color: #e0ceff;
+    color: #4b0082;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: 600;
 }
 
 /* ----------------------------------
@@ -165,42 +120,32 @@ hr {
 .option {
     display: flex;
     align-items: center;
-    padding: 15px 10px; /* Más espacio */
+    padding: 10px 5px;
     border-top: 1px solid #eee;
-    transition: background-color 0.2s;
-}
-
-.option:first-child {
-    border-top: none;
 }
 
 .option:hover {
-    background-color: #e0ceff; /* Tono de fondo más atractivo al pasar el ratón */
-    border-radius: 8px;
+    background-color: #f0f0ff;
+    border-radius: 5px;
 }
 
 .option input[type="radio"] {
-    margin-right: 15px;
+    margin-right: 10px;
     -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
-    width: 24px; /* Un poco más grande */
-    height: 24px;
-    border: 3px solid #8a2be2; /* Borde con color primario */
+    width: 18px; 
+    height: 18px;
+    border: 2px solid #8a2be2;
     border-radius: 50%;
-    outline: none;
     cursor: pointer;
-    transition: all 0.2s;
-    min-width: 24px;
 }
 
 .option input[type="radio"]:checked {
-    border: 7px solid #4b0082; /* Color oscuro al seleccionar */
-    background-color: #e0ceff; /* Relleno sutil */
+    border: 5px solid #4b0082; /* Relleno morado */
 }
 
 .option label {
-    font-size: 17px;
+    font-size: 15px;
     color: #343a40;
     cursor: pointer;
 }
@@ -212,65 +157,43 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
+    padding: 20px 30px 0 30px;
     border-top: 1px solid #ddd;
-    padding: 30px 45px 0 45px; /* Aplicar padding para centrar los botones */
 }
 
 .submit-btn {
     background-color: #8a2be2;
     color: white;
     border: none;
-    border-radius: 30px;
-    padding: 14px 40px;
-    font-size: 17px;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 15px;
     cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
-}
-
-.submit-btn:hover {
-    background-color: #6a1ba9;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    transform: translateY(-2px);
+    font-weight: 600;
 }
 
 .reset-btn {
     background: none;
     color: #8a2be2;
-    border: 2px solid #8a2be2; /* Borde sutil */
-    border-radius: 30px;
-    padding: 12px 30px;
-    font-size: 15px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
     cursor: pointer;
-    font-weight: 700;
-    transition: background-color 0.3s, color 0.3s;
 }
-
-.reset-btn:hover {
-    background-color: #e0ceff;
-    color: #4b0082;
-}
-
 
 /* ----------------------------------
  * 7. Estilos para Resultados
  * ---------------------------------- */
 .results-container {
-    margin-top: 25px;
-    padding: 25px;
-    border: 3px solid #28a745; /* Borde de éxito verde brillante */
-    background-color: #f0fff0; /* Fondo muy claro de éxito */
-    border-radius: 10px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #28a745; 
+    background-color: #f0fff0;
+    border-radius: 8px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.2);
 }
 
 .results-container strong {
     color: #28a745;
-    font-size: 1.4em; /* Fuente más grande para el resultado final */
-    font-weight: 800;
+    font-size: 1.2em;
 }

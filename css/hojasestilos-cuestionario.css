@@ -197,3 +197,26 @@ h1 {
     color: #28a745;
     font-size: 1.2em;
 }
+
+/* ----------------------------------
+ * 8. Botón de Menú Rápido
+ * ---------------------------------- */
+.menu-btn {
+    background-color: #e0ceff; 
+    color: #4b0082; 
+    border: 2px solid #8a2be2; 
+    border-radius: 20px;
+    padding: 10px 25px; 
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: 700;
+    display: inline-block; /* Permite que el margen funcione */
+    margin: 0 30px 20px 30px; /* Margen para separarlo del título */
+    transition: background-color 0.2s;
+}
+
+.menu-btn:hover {
+    background-color: #d0c0ff;
+    color: #4b0082;
+}

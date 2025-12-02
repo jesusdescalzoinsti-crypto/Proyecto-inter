@@ -138,7 +138,7 @@ ol.galeria {
 }
 
 ol.galeria li {
-    width: 300px;          /* 🔥 Tamaño máximo para cada imagen + número */
+    width: 450px;          /* 🔥 Tamaño máximo para cada imagen + número */
     list-style: decimal;   /* Asegura numeración */
 }
 

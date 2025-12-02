@@ -156,37 +156,93 @@
 
         <div class="section">
             <div class="img-box">
-                <img src="IMG/necesidades empresas DAM.webp" alt="Desarrollo software">
+                <img src="IMG/necesidades empresas DAM.webp" alt="Requisitos del Mercado de Software">
             </div>
-            <h2>NECESIDADES MÁS DEMANDADAS DE LAS EMPRESAS DAM</h2>
-            <p>
-                El desarrollo de software es el proceso de crear aplicaciones, programas y sistemas que permiten
-                automatizar tareas, resolver problemas y mejorar la experiencia de los usuarios. Incluye desde
-                la
-                planificación, diseño y programación, hasta las pruebas, mantenimiento y actualización del
-                software.
-            </p>
+            <div class="info-acordeon">
+
+                <div class="acordeon-encabezado" onclick="toggleNecesidades()">
+                    <h2>NECESIDADES MÁS DEMANDADAS DE LAS EMPRESAS DAM</h2>
+
+                    <button id="toggle-necesidades-btn" class="toggle-button">
+                        &#9660;
+                    </button>
+                </div>
+
+                <div id="contenido-necesidades-desplegable" class="acordeon-contenido">
+
+                    <p>La Conclusión principal es que el mercado busca sobretodo eficiencia, rapidez, y algo
+                        visual y fácil de usar.</p>
+
+                    <hr>
+
+                    <h3>Competencias Técnicas más Demandadas</h3>
+                    <ul>
+                        <li><strong>Frameworks y tecnologías:</strong> Principalmente Flutter o React Native.
+                        </li>
+                        <li><strong>Lenguajes clave:</strong> JavaScript, HTML, CSS.</li>
+                        <li><strong>Conocimientos transversales:</strong> Integración de APIs, Bases de Datos, Control
+                            de versiones...</li>
+                    </ul>
+
+                    <hr>
+
+                    <h3>Necesidades Técnicas del Mercado</h3>
+                    <ul>
+                        <li>Las empresas buscan que las apps sean fluidas, minimicen problemas de compatibilidad
+                            y sean fáciles de usar.</li>
+                        <li>Las compañías requieren: Código limpio, Buena arquitectura.</li>
+                        <li><strong>Integración de servicios modernos:</strong> Pagos móviles, Autenticación.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h3>Necesidades del Negocio (Empresa)</h3>
+                    <ul>
+                        <li>Reducir el tiempo de desarrollo.</li>
+                        <li>Minimizar costos de mantenimiento**.</li>
+                        <li>Interacciones rápidas.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h3>Necesidades hacia Clientes</h3>
+                    <ul>
+                        <li>Interfaces modernas y fáciles de usar.</li>
+                        <li>El menor número de bugs posibles.</li>
+                        <li>Encriptación de datos.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <script>
+            function toggleAcordeon() {
+                const contenido = document.getElementById('contenido-desplegable');
+                const boton = document.getElementById('toggle-btn');
+
+                contenido.classList.toggle('desplegado');
+                boton.classList.toggle('active');
+            }
+
+            function toggleTabla() {
+                const contenidoTabla = document.getElementById('contenido-tabla-desplegable');
+                const botonTabla = document.getElementById('toggle-tabla-btn');
+
+                contenidoTabla.classList.toggle('desplegado');
+                botonTabla.classList.toggle('active');
+            }
+
+            function toggleNecesidades() {
+                const contenidoNecesidades = document.getElementById('contenido-necesidades-desplegable');
+                const botonNecesidades = document.getElementById('toggle-necesidades-btn');
+
+                contenidoNecesidades.classList.toggle('desplegado');
+                botonNecesidades.classList.toggle('active');
+            }
+
+        </script>
 
 
-    <script>
-        function toggleAcordeon() {
-            const contenido = document.getElementById('contenido-desplegable');
-            const boton = document.getElementById('toggle-btn');
-
-            contenido.classList.toggle('desplegado');
-            boton.classList.toggle('active');
-        }
-
-        function toggleTabla() {
-            const contenidoTabla = document.getElementById('contenido-tabla-desplegable');
-            const botonTabla = document.getElementById('toggle-tabla-btn');
-
-            contenidoTabla.classList.toggle('desplegado');
-            botonTabla.classList.toggle('active');
-        }
-    </script>
 
 </body>
 

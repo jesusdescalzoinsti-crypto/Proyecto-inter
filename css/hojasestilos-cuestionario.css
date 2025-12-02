@@ -1,152 +1,192 @@
-/* Archivo: css/cuestionario.css */
+/* Archivo: hojasestilos-cuestionario.css */
 
+/* ----------------------------------
+ * 1. Estilos Globales y Contenedor
+ * ---------------------------------- */
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    background-color: #f0f4f9; 
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ebee; /* Fondo gris muy claro para contraste */
     margin: 0;
-    padding: 20px;
+    padding: 40px 20px;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
 }
 
 .form-container {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px; /* Un poco más ancho */
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 35px 45px;
 }
 
 h1 {
-    color: #202124;
-    font-size: 32px;
+    color: #4b0082; /* Morado Oscuro para titular */
+    font-size: 36px;
+    font-weight: 700;
     margin-bottom: 5px;
 }
 
+/* ----------------------------------
+ * 2. Cabecera y Notas
+ * ---------------------------------- */
 .email-info {
-    color: #5f6368;
-    font-size: 14px;
-    border-bottom: 1px solid #dadce0;
+    color: #6c757d;
+    font-size: 15px;
+    border-bottom: 2px solid #ddd;
     padding-bottom: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .email-info a {
-    color: #1a73e8;
+    color: #8a2be2; /* Azul violeta */
     text-decoration: none;
     margin-left: 10px;
+    font-weight: 600;
 }
 
 .required-note {
-    color: #d93025; 
-    font-size: 12px;
-    margin-bottom: 20px;
+    color: #dc3545; /* Rojo de advertencia */
+    font-size: 13px;
+    margin-bottom: 30px;
+    font-style: italic;
 }
 
-/* Estilo para cada bloque de pregunta */
+/* ----------------------------------
+ * 3. Bloques de Preguntas (Tarjetas)
+ * ---------------------------------- */
 .question-block {
-    border: 1px solid #dadce0;
+    border: none;
+    background-color: #f7f7ff; /* Fondo muy claro para la tarjeta */
+    border-left: 5px solid #8a2be2; /* Línea de color a la izquierda */
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.question-block:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra al pasar el ratón */
 }
 
 .question-title {
-    font-size: 16px;
-    font-weight: 500;
-    color: #202124;
-    border: none;
-    padding: 0;
-    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .required-star {
-    color: #d93025;
+    color: #dc3545;
     margin-left: 5px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .points-badge {
-    color: #5f6368;
-    font-size: 13px;
-    font-weight: 400;
+    background-color: #e0ceff; /* Fondo para la puntuación */
+    color: #4b0082;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
-/* Estilo para las opciones de radio */
+/* ----------------------------------
+ * 4. Opciones (Radio Buttons)
+ * ---------------------------------- */
 .option {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    padding: 12px 0;
+    border-top: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.option:first-child {
+    border-top: none;
+}
+
+.option:hover {
+    background-color: #f0f0ff; /* Resaltar la opción al pasar el ratón */
+    border-radius: 4px;
 }
 
 .option input[type="radio"] {
     margin-right: 15px;
-   
+    /* Estilo del radio button */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #5f6368;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #ccc;
     border-radius: 50%;
     outline: none;
     cursor: pointer;
-    transition: border-color 0.2s;
+    transition: all 0.2s;
+    min-width: 22px; /* Asegurar tamaño fijo */
 }
 
 .option input[type="radio"]:checked {
-    border: 6px solid #673ab7; 
+    border: 6px solid #8a2be2; /* Morado fuerte al seleccionar */
+    border-color: #8a2be2;
 }
 
 .option label {
-    font-size: 14px;
-    color: #202124;
+    font-size: 16px;
+    color: #343a40;
     cursor: pointer;
 }
 
-/* Estilo para los botones de acción */
+/* ----------------------------------
+ * 5. Botones de Acción
+ * ---------------------------------- */
 .action-buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 25px;
+    border-top: 1px solid #ddd;
 }
 
 .submit-btn {
-    background-color: #673ab7; 
+    background-color: #8a2be2; /* Azul violeta principal */
     color: white;
     border: none;
-    border-radius: 4px;
-    padding: 10px 24px;
-    font-size: 14px;
+    border-radius: 25px; /* Botón redondeado */
+    padding: 12px 30px;
+    font-size: 16px;
     cursor: pointer;
-    text-transform: capitalize;
-    font-weight: 500;
-    transition: background-color 0.3s;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .submit-btn:hover {
-    background-color: #5e35b1;
+    background-color: #6a1ba9; /* Tono más oscuro al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .reset-btn {
     background: none;
-    color: #673ab7;
+    color: #8a2be2;
     border: none;
-    padding: 10px 24px;
+    padding: 10px 20px;
     font-size: 14px;
     cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
 .reset-btn:hover {
-    background-color: #f1f1f1;
-    border-radius: 4px;
+    color: #6a1ba9;
 }

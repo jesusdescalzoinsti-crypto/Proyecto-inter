@@ -1,0 +1,152 @@
+/* Archivo: css/cuestionario.css */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0f4f9; 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1 {
+    color: #202124;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.email-info {
+    color: #5f6368;
+    font-size: 14px;
+    border-bottom: 1px solid #dadce0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.email-info a {
+    color: #1a73e8;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.required-note {
+    color: #d93025; 
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada bloque de pregunta */
+.question-block {
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #202124;
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.required-star {
+    color: #d93025;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.points-badge {
+    color: #5f6368;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* Estilo para las opciones de radio */
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.option input[type="radio"] {
+    margin-right: 15px;
+   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #5f6368;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.option input[type="radio"]:checked {
+    border: 6px solid #673ab7; 
+}
+
+.option label {
+    font-size: 14px;
+    color: #202124;
+    cursor: pointer;
+}
+
+/* Estilo para los botones de acción */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.submit-btn {
+    background-color: #673ab7; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #5e35b1;
+}
+
+.reset-btn {
+    background: none;
+    color: #673ab7;
+    border: none;
+    padding: 10px 24px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}

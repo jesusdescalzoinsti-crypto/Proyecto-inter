@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuestionario: Ingeniería del Software</title>
+    <title>Cuestionarios de Ingeniería del Software</title>
     <link rel="stylesheet" href="css/hojasestilos-cuestionario.css"> 
 </head>
 <body>
 
     <div class="form-container">
-        <h1>Ingeniería del Software</h1>
+        <h1>Cuestionarios de Ingeniería del Software</h1>
 
         <div class="email-info">
             rullvelencosogarcia@gmail.com
@@ -17,57 +17,207 @@
         </div>
         <p class="required-note">* Indica que la pregunta es obligatoria</p>
 
-        <form id="quiz-form"> 
+        
+        <h2>1. Conceptos Básicos de IS (10 Puntos)</h2>
+        <form id="quiz-1"> 
 
             <fieldset class="question-block">
                 <legend class="question-title">
-                    ¿Qué objetivo tiene la ingeniería del software? <span class="required-star">*</span>
+                    1. ¿Qué objetivo tiene la ingeniería del software? <span class="required-star">*</span>
                     <span class="points-badge">5 puntos</span>
                 </legend>
                 <div class="option">
-                    <input type="radio" id="p1a" name="q1" value="a" required>
-                    <label for="p1a">a) Crear software sin planificación</label>
+                    <input type="radio" id="q1_p1a" name="q1" value="a" required>
+                    <label for="q1_p1a">a) Crear software sin planificación</label>
                 </div>
                 <div class="option">
-                    <input type="radio" id="p1b" name="q1" value="b" required>
-                    <label for="p1b">b) Garantizar que el software sea de calidad y cumpla requisitos</label>
+                    <input type="radio" id="q1_p1b" name="q1" value="b" required>
+                    <label for="q1_p1b">b) Garantizar que el software sea de calidad y cumpla requisitos</label>
                 </div>
                 <div class="option">
-                    <input type="radio" id="p1c" name="q1" value="c">
-                    <label for="p1c">c) Hacer programas lo más rápido posible sin pruebas</label>
+                    <input type="radio" id="q1_p1c" name="q1" value="c">
+                    <label for="q1_p1c">c) Hacer programas lo más rápido posible sin pruebas</label>
                 </div>
             </fieldset>
 
             <fieldset class="question-block">
                 <legend class="question-title">
-                    Las pruebas de software sirven para: <span class="required-star">*</span>
+                   2. Las pruebas de software sirven para: <span class="required-star">*</span>
                     <span class="points-badge">5 puntos</span>
                 </legend>
                 <div class="option">
-                    <input type="radio" id="p2a" name="q2" value="a" required>
-                    <label for="p2a">a) Encontrar y corregir errores antes de la entrega</label>
+                    <input type="radio" id="q1_p2a" name="q2" value="a" required>
+                    <label for="q1_p2a">a) Encontrar y corregir errores antes de la entrega</label>
                 </div>
                 <div class="option">
-                    <input type="radio" id="p2b" name="q2" value="b">
-                    <label for="p2b">b) Complicar el desarrollo</label>
+                    <input type="radio" id="q1_p2b" name="q2" value="b">
+                    <label for="q1_p2b">b) Complicar el desarrollo</label>
                 </div>
                 <div class="option">
-                    <input type="radio" id="p2c" name="q2" value="c">
-                    <label for="p2c">c) Evitar documentar los requisitos</label>
+                    <input type="radio" id="q1_p2c" name="q2" value="c">
+                    <label for="q1_p2c">c) Evitar documentar los requisitos</label>
                 </div>
             </fieldset>
 
             <div class="action-buttons">
-                <button type="submit" class="submit-btn">Enviar y Corregir</button>
+                <button type="submit" class="submit-btn">Corregir Cuestionario 1</button>
                 <button type="reset" class="reset-btn">Borrar formulario</button>
             </div>
 
         </form>
         
-        <div id="results" style="display: none;">
+        <div id="results-1" style="display: none;"></div>
+
+        ---
+
+        <h2>2. Fases de la Ingeniería del Software (7 Puntos)</h2>
+        <form id="quiz-2"> 
+
+            <fieldset class="question-block">
+                <legend class="question-title">
+                    1. ¿Qué se hace en la fase de **Planificación e Investigación**? <span class="required-star">*</span>
+                    <span class="points-badge">1 punto</span>
+                </legend>
+                <div class="option">
+                    <input type="radio" id="q2_p1a" name="q3" value="a" required>
+                    <label for="q2_p1a">a) Se publican los anuncios de marketing</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p1b" name="q3" value="b">
+                    <label for="q2_p1b">b) Se define la idea y se evalúa si el proyecto es posible y rentable</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p1c" name="q3" value="c">
+                    <label for="q2_p1c">c) Se escribe todo el código de la aplicación</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="question-block">
+                <legend class="question-title">
+                    2. ¿Para qué sirve la fase de **Alcance y Documentación**? <span class="required-star">*</span>
+                    <span class="points-badge">1 punto</span>
+                </legend>
+                <div class="option">
+                    <input type="radio" id="q2_p2a" name="q4" value="a" required>
+                    <label for="q2_p2a">a) Para probar errores en el software</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p2b" name="q4" value="b">
+                    <label for="q2_p2b">b) Para definir y dejar por escrito todas las características de la aplicación</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p2c" name="q4" value="c">
+                    <label for="q2_p2c">c) Para medir el comportamiento de los usuarios</label>
+                </div>
+            </fieldset>
+            
+            <fieldset class="question-block">
+                <legend class="question-title">
+                    3. ¿Qué se hace en **Diseño y Prototipado**? <span class="required-star">*</span>
+                    <span class="points-badge">1 punto</span>
+                </legend>
+                <div class="option">
+                    <input type="radio" id="q2_p3a" name="q5" value="a" required>
+                    <label for="q2_p3a">a) Se crean bocetos y prototipos de la apariencia y experiencia de usuario</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p3b" name="q5" value="b">
+                    <label for="q2_p3b">b) Se escriben los requisitos técnicos</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p3c" name="q5" value="c">
+                    <label for="q2_p3c">c) Se corrigen los fallos del software</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="question-block">
+                <legend class="question-title">
+                    4. ¿Qué sucede durante la fase de **Desarrollo (Implementación)**? <span class="required-star">*</span>
+                    <span class="points-badge">1 punto</span>
+                </legend>
+                <div class="option">
+                    <input type="radio" id="q2_p4a" name="q6" value="a" required>
+                    <label for="q2_p4a">a) Se analizan los datos de los usuarios</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p4b" name="q6" value="b">
+                    <label for="q2_p4b">b) Se escribe el código siguiendo métodos organizados como SCRUM o Kanban</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p4c" name="q6" value="c">
+                    <label for="q2_p4c">c) Se publican la aplicación en tiendas</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="question-block">
+                <legend class="question-title">
+                    5. ¿Cuál es el objetivo de **Pruebas y Calidad**? <span class="required-star">*</span>
+                    <span class="points-badge">1 punto</span>
+                </legend>
+                <div class="option">
+                    <input type="radio" id="q2_p5a" name="q7" value="a" required>
+                    <label for="q2_p5a">a) Encontrar y corregir fallos antes del lanzamiento</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p5b" name="q7" value="b">
+                    <label for="q2_p5b">b) Crear el diseño visual de la aplicación</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p5c" name="q7" value="c">
+                    <label for="q2_p5c">c) Definir la idea del proyecto</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="question-block">
+                <legend class="question-title">
+                    6. ¿Para qué sirve el **Soporte y Mantenimiento**? <span class="required-star">*</span>
+                    <span class="points-badge">1 punto</span>
+                </legend>
+                <div class="option">
+                    <input type="radio" id="q2_p6a" name="q8" value="a" required>
+                    <label for="q2_p6a">a) Para corregir errores que aparecen después de que la aplicación ya está en uso</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p6b" name="q8" value="b">
+                    <label for="q2_p6b">b) Para crear los prototipos de la aplicación</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p6c" name="q8" value="c">
+                    <label for="q2_p6c">c) Para definir el alcance del proyecto</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="question-block">
+                <legend class="question-title">
+                    7. ¿Qué se hace en la fase de **Análisis y Optimización**? <span class="required-star">*</span>
+                    <span class="points-badge">1 punto</span>
+                </legend>
+                <div class="option">
+                    <input type="radio" id="q2_p7a" name="q9" value="a" required>
+                    <label for="q2_p7a">a) Se mide el comportamiento de los usuarios y se planifican mejoras</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p7b" name="q9" value="b">
+                    <label for="q2_p7b">b) Se escribe el código de la aplicación</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="q2_p7c" name="q9" value="c">
+                    <label for="q2_p7c">c) Se publica la aplicación en las tiendas</label>
+                </div>
+            </fieldset>
+
+            <div class="action-buttons">
+                <button type="submit" class="submit-btn">Corregir Cuestionario 2</button>
+                <button type="reset" class="reset-btn">Borrar formulario</button>
             </div>
+
+        </form>
+        
+        <div id="results-2" style="display: none;"></div>
+
     </div>
 
     <script src="App.js/javaScript.js"></script> 
 </body>
+</html>
 </html>

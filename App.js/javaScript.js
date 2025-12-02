@@ -1,24 +1,22 @@
 
+
 // ==============================================
 // 1. RESPUESTAS Y PUNTUACIONES
 // ==============================================
 
 const QUIZZES = {
+    // CUESTIONARIO 1: Conceptos Básicos (2 Preguntas / Max. 10 Puntos)
     'quiz-1': {
-        // Cuestionario 1: Conceptos Básicos (Max. 10 Puntos)
         maxScore: 10,
         questions: {
-            // Pregunta 1: Objetivo de IS (5 Puntos)
-            q1: { answer: 'b', points: 5 }, 
-            // Pregunta 2: Pruebas de software (5 Puntos)
-            q2: { answer: 'a', points: 5 }  
+            q1: { answer: 'b', points: 5 }, // Objetivo de IS
+            q2: { answer: 'a', points: 5 }  // Pruebas de software
         }
     },
+    // CUESTIONARIO 2: Fases de Desarrollo (7 Preguntas / Max. 7 Puntos)
     'quiz-2': {
-        // Cuestionario 2: Fases de Desarrollo (Max. 7 Puntos)
         maxScore: 7,
         questions: {
-            // Se usan q3, q4, etc., para evitar conflicto con q1 y q2 del primer quiz.
             q3: { answer: 'b', points: 1 }, // 1. Planificación
             q4: { answer: 'b', points: 1 }, // 2. Alcance/Documentación
             q5: { answer: 'a', points: 1 }, // 3. Diseño/Prototipado
@@ -27,25 +25,57 @@ const QUIZZES = {
             q8: { answer: 'a', points: 1 }, // 6. Soporte y Mantenimiento
             q9: { answer: 'a', points: 1 }  // 7. Análisis y Optimización
         }
+    },
+    // CUESTIONARIO 3: Perfiles que Intervienen (8 Preguntas / Max. 8 Puntos)
+    'quiz-3': {
+        maxScore: 8,
+        questions: {
+            q10: { answer: 'b', points: 1 }, // 1. Hablar con el cliente (Analista)
+            q11: { answer: 'a', points: 1 }, // 2. Organiza tiempo/presupuesto (Gestor)
+            q12: { answer: 'b', points: 1 }, // 3. Escribir código (Desarrollador)
+            q13: { answer: 'a', points: 1 }, // 4. Diseña estructura escalable (Arquitecto/Diseñador)
+            q14: { answer: 'a', points: 1 }, // 5. Asegura funcionamiento antes de entrega (Ing. Integración/Pruebas)
+            q15: { answer: 'a', points: 1 }, // 6. Corrige errores en uso (Espec. Mantenimiento)
+            q16: { answer: 'a', points: 1 }, // 7. Añadir nueva función (Espec. Mantenimiento)
+            q17: { answer: 'a', points: 1 }  // 8. Traduce necesidades a requisitos (Analista/Consultor)
+        }
+    },
+    // CUESTIONARIO 4: Modelos de Ciclo de Vida (8 Preguntas / Max. 8 Puntos)
+    'quiz-4': {
+        maxScore: 8,
+        questions: {
+            q18: { answer: 'c', points: 1 }, // 1. Cascada: secuencial
+            q19: { answer: 'b', points: 1 }, // 2. Modelo en V: Requisitos y pruebas
+            q20: { answer: 'c', points: 1 }, // 3. Incremental: Funcionalidad completa
+            q21: { answer: 'b', points: 1 }, // 4. Espiral: Gestión de riesgos
+            q22: { answer: 'a', points: 1 }, // 5. Iterativo: Versión mejorada
+            q23: { answer: 'b', points: 1 }, // 6. Prototipado: Aclarar requisitos
+            q24: { answer: 'c', points: 1 }, // 7. DevOps: Desarrollo y operaciones
+            q25: { answer: 'b', points: 1 }  // 8. Integración Continua: Probar código frecuente
+        }
+    },
+    // CUESTIONARIO 5: RUP y Metodologías Ágiles (4 Preguntas / Max. 4 Puntos)
+    'quiz-5': {
+        maxScore: 4,
+        questions: {
+            q26: { answer: 'c', points: 1 }, // 1. RUP fases: 4
+            q27: { answer: 'a', points: 1 }, // 2. Ágiles: ciclos cortos y revisables
+            q28: { answer: 'd', points: 1 }, // 3. No es ágil: RUP
+            q29: { answer: 'b', points: 1 }  // 4. RUP Construcción: Implementar y probar
+        }
     }
 };
 
 // ==============================================
-// 2.  CORRECCIÓN
+// 2. LÓGICA DE CORRECCIÓN (NO NECESITA MODIFICACIÓN)
 // ==============================================
 
-/**
- * Función que corrige un cuestionario específico.
- * @param {Event} event - El evento de submit del formulario.
- */
 function checkQuiz(event) {
     event.preventDefault(); 
     
-    // Obtiene el ID del formulario que se envió (quiz-1 o quiz-2)
     const form = event.target;
     const formId = form.id; 
     
-    // Si el ID del formulario no está en nuestra lista de QUIZZES, salimos.
     if (!QUIZZES[formId]) return;
 
     const quizData = QUIZZES[formId];
@@ -54,25 +84,21 @@ function checkQuiz(event) {
     let correctCount = 0;
     let totalQuestions = Object.keys(quizData.questions).length;
 
-    // Itera sobre las preguntas del cuestionario específico
     for (const [questionId, data] of Object.entries(quizData.questions)) {
         const userAnswer = formData.get(questionId); 
-
         if (userAnswer === data.answer) {
             score += data.points;
             correctCount++;
         }
     }
 
-    // Calcula el porcentaje
     const percentage = (score / quizData.maxScore) * 100;
     
-    // Obtiene el ID del contenedor de resultados correspondiente (results-1 o results-2)
+    // Asume que el div de resultados se llama 'results-X'
     const resultsDiv = document.getElementById(`results-${formId.split('-')[1]}`);
     
     if (!resultsDiv) return;
 
-    // Muestra los resultados
     resultsDiv.innerHTML = `
         <h2>✅ Resultados de ${formId.toUpperCase()} ✅</h2>
         <div class="result-summary">
@@ -82,32 +108,30 @@ function checkQuiz(event) {
         </div>
     `;
     
-    // Oculta el formulario y muestra los resultados
     form.style.display = 'none';
     resultsDiv.style.display = 'block';
     resultsDiv.scrollIntoView({ behavior: 'smooth' });
 }
 
 // ==============================================
-// 3. INICIALIZACIÓN
+// 3. INICIALIZACIÓN (ASOCIAR LOS 5 FORMULARIOS)
 // ==============================================
 
-// Asocia la función de corrección a ambos formularios
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Obtener y asociar la función a todos los formularios
-    const form1 = document.getElementById('quiz-1');
-    const form2 = document.getElementById('quiz-2');
-    
-    if (form1) {
-        form1.addEventListener('submit', checkQuiz);
-        // 2. Ocultar los resultados al inicio
-        const results1 = document.getElementById('results-1');
-        if (results1) results1.style.display = 'none';
-    }
-    
-    if (form2) {
-        form2.addEventListener('submit', checkQuiz);
-        const results2 = document.getElementById('results-2');
-        if (results2) results2.style.display = 'none';
+    // Itera sobre todos los IDs de los quizzes para asociar el evento y ocultar los resultados.
+    for (let i = 1; i <= 5; i++) {
+        const formId = `quiz-${i}`;
+        const resultsId = `results-${i}`;
+        
+        const form = document.getElementById(formId);
+        const resultsDiv = document.getElementById(resultsId);
+
+        if (form) {
+            form.addEventListener('submit', checkQuiz);
+        }
+        
+        if (resultsDiv) {
+            resultsDiv.style.display = 'none';
+        }
     }
 });

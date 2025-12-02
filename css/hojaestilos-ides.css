@@ -173,3 +173,6 @@ ol.galeria li img {
     display: block;
     border-radius: 5px;
 }
+.redonda {
+  border-radius: 15px;
+}

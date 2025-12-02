@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario: Ingeniería del Software</title>
+    <link rel="stylesheet" href="css/hojasestilos-cuestionario.css"> 
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Ingeniería del Software</h1>
+
+        <div class="email-info">
+            rullvelencosogarcia@gmail.com
+            <a href="#">Cambiar de cuenta</a>
+        </div>
+        <p class="required-note">* Indica que la pregunta es obligatoria</p>
+
+        <form id="quiz-form"> 
+
+            <fieldset class="question-block">
+                <legend class="question-title">
+                    ¿Qué objetivo tiene la ingeniería del software? <span class="required-star">*</span>
+                    <span class="points-badge">5 puntos</span>
+                </legend>
+                <div class="option">
+                    <input type="radio" id="p1a" name="q1" value="a" required>
+                    <label for="p1a">a) Crear software sin planificación</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="p1b" name="q1" value="b" required>
+                    <label for="p1b">b) Garantizar que el software sea de calidad y cumpla requisitos</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="p1c" name="q1" value="c">
+                    <label for="p1c">c) Hacer programas lo más rápido posible sin pruebas</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="question-block">
+                <legend class="question-title">
+                    Las pruebas de software sirven para: <span class="required-star">*</span>
+                    <span class="points-badge">5 puntos</span>
+                </legend>
+                <div class="option">
+                    <input type="radio" id="p2a" name="q2" value="a" required>
+                    <label for="p2a">a) Encontrar y corregir errores antes de la entrega</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="p2b" name="q2" value="b">
+                    <label for="p2b">b) Complicar el desarrollo</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="p2c" name="q2" value="c">
+                    <label for="p2c">c) Evitar documentar los requisitos</label>
+                </div>
+            </fieldset>
+
+            <div class="action-buttons">
+                <button type="submit" class="submit-btn">Enviar y Corregir</button>
+                <button type="reset" class="reset-btn">Borrar formulario</button>
+            </div>
+
+        </form>
+        
+        <div id="results" style="display: none;">
+            </div>
+    </div>
+
+    <script src="App.js/javaScript.js"></script> 
+</body>
+</html>
